@@ -38,7 +38,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <?php endforeach; ?>
         <input type="hidden" name="operator" value="<?= $operator ?>">
         <button type="submit">Submit</button>
-
     </form>
 </body>
 </html>
