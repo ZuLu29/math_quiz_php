@@ -19,3 +19,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results</title>
+</head>
+<body>
+    <h1>Quiz Results</h1>
+    <p>Your Score: <?= $score ?>/<?= count($quiz) ?></p>
+    <a href="settings.php"><button>Try Again</button></a>
+</body>
+</html>
