@@ -29,6 +29,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <h1>Quiz Results</h1>
     <p>Your Score: <?= $score ?>/<?= count($quiz) ?></p>
-    <a href="settings.php"><button>Try Again</button></a>
+    <a href="index.php"><button>Try Again</button></a>
 </body>
 </html>
