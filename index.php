@@ -8,7 +8,15 @@
 <body>
     <h2>Math Quiz Settings</h2>
     <form action="" method="POST">
+    <label for="level">Select Level:</label>
+        <select name="level" id="level" required>
+            <option value="1">Level 1 (1-10)</option>
+            <option value="2">Level 2 (11-100)</option>
+        </select>
+        <br><br>
+
         
+
     </form>
 </body>
 </html>
