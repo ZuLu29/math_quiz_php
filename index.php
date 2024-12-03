@@ -23,7 +23,11 @@
         </select>
         <br><br>
 
+        <label for="questions">Number of Questions:</label>
+        <input type="number" name="questions" id="questions" min="1" required>
+        <br><br>
 
+        <button type="submit">Start Quiz</button>
     </form>
 </body>
 </html>
