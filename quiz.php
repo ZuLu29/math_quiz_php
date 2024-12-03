@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
     <h1>math quiz</h1>
     <form action="" method="post">
-        <?php foreach ($quiz as $index => $q); ?>
+        <?php foreach ($quiz as $index => $q): ?>
             <p>
                 <?= $q['num1'] ?> 
                 <?= $operator == 'add' ? '+' : ($operator == 'subtract' ? '-' : '×') ?> 
