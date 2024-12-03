@@ -24,6 +24,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <title>math quiz</title>
 </head>
 <body>
-    
+    <h1>math quiz</h1>
+    <form action="" method="post">
+        <?php foreach ($quiz as $index => $q); ?>
+            <p>
+                <?= $q['num1'] ?> 
+                <?= $operator == 'add' ? '+' : ($operator == 'subtract' ? '-' : '×') ?> 
+                <?= $q['num2'] ?> = 
+                <input type="number" name="answers[<?= $index ?>]" required>
+                <input type="hidden" name="quiz[<?= $index ?>][num1]" value="<?= $q['num1'] ?>">
+                <input type="hidden" name="quiz[<?= $index ?>][num2]" value="<?= $q['num2'] ?>">
+            </p>
+        <?php endforeach; ?>
+        <input type="hidden" name="operator" value="<?= $operator ?>">
+        <button type="submit">Submit</button>
+
+    </form>
 </body>
 </html>
